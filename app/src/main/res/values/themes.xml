@@ -1,0 +1,35 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.StoryBooks" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="buttonBarButtonStyle">@color/black</item>
+
+        <item name="android:spinnerItemStyle">@style/DefaultTextStyle</item>
+        <item name="spinnerDropDownItemStyle">@style/DefaultTextStyle</item>
+    </style>
+
+    <style name="Theme.StoryBooks" parent="Base.Theme.StoryBooks" />
+
+    <!-- Créer le composant pour le titre par defaut -->
+    <style name="DefaultTextStyle">
+        <item name="android:textColor">@color/lightGrey</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+    <style name="subtittleTextStyle" parent="DefaultTextStyle" >
+        <item name="android:textColor">@color/black</item>
+    </style>
+    <style name="tittleTextStyle" parent="subtittleTextStyle" >
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <!-- Créer un style pour la bottom navigation view -->
+    <style name="BottomNavigationStyle" parent="Widget.Design.BottomNavigationView">
+        <item name="android:textSize">18dp</item>
+    </style>
+
+    <!-- perso la barre de nav -->
+    <style name="BottomNavigationTheme" parent="Widget.Design.BottomNavigationView">
+        <item name="android:textSize">18sp</item>
+    </style>
+</resources>

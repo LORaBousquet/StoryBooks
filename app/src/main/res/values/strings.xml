@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">StoryBooks</string>
+
+    <string name="bottom_home_item">Acceuil</string>
+    <string name="bottom_collection_item">Bibliothèque</string>
+    <string name="bottom_add_book_item">Ajouter</string>
+
+    <!-- Home Page -->
+    <string name="home_page_title">A découvrir</string>
+    <string name="home_page_last_book_section">Derniers romans</string>
+
+    <!--! Ma bibliothèque -->
+    <string name="bibliotheque_page_title">Ma bibliothèque</string>
+
+    <!-- Page d'ajout de livre -->
+    <string name="add_book_page_title">Ajout d\'un roman</string>
+    <string name="add_book_page_upload_button">Charger une image</string>
+    <string name="add_book_page_name_input">@string/item_book_name</string>
+    <string name="add_book_page_description_input">@string/item_book_description</string>
+    <string-array name="add_book_page_genra_input">
+        <item>Genre: Romance</item>
+        <item>Genre: Biographie</item>
+        <item>Genre: Thriller</item>
+        <item>Genre: Science-Fiction</item>
+    </string-array>
+    <string-array name="add_book_page_score_input">
+        <item>Note: 1/10</item>
+        <item>Note: 2/10</item>
+        <item>Note: 3/10</item>
+        <item>Note: 4/10</item>
+        <item>Note: 5/10</item>
+        <item>Note: 6/10</item>
+        <item>Note: 7/10</item>
+        <item>Note: 8/10</item>
+        <item>Note: 9/10</item>
+        <item>Note: 10/10</item>
+    </string-array>
+    <string name="add_book_page_confirm_button">CONFIRMER</string>
+
+    <!-- Pop up -->
+    <string name="popup_book_name">@string/item_book_name</string>
+    <string name="popup_book_description_title">Description</string>
+    <string name="popup_book_description_subtitle">Petite description</string>
+    <string name="popup_book_genra_title">Genre</string>
+    <string name="popup_book_genra_subtitle">Romance</string>
+    <string name="popup_book_score_title">Note</string>
+    <string name="popup_book_score_subtitle">7/10</string>
+
+    <!-- Book costumize -->
+    <string name="item_book_name">Titre du roman</string>
+    <string name="item_book_description">Description</string>
+</resources>

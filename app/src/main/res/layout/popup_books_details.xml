@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="360dp"
+    android:layout_height="500dp"
+    android:padding="15dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/image_item"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/hades" />
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/popup_book_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/popup_book_name"
+        app:layout_constraintBottom_toBottomOf="@+id/cardView2"
+        app:layout_constraintStart_toEndOf="@+id/cardView2"
+        app:layout_constraintTop_toTopOf="@+id/cardView2"
+        android:layout_marginLeft="30dp"
+        style="@style/tittleTextStyle"/>
+
+    <ImageView
+        android:id="@+id/close_button"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_close"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/popup_book_description_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/default_margin"
+        android:text="@string/popup_book_description_title"
+        app:layout_constraintStart_toStartOf="@+id/cardView2"
+        app:layout_constraintTop_toBottomOf="@+id/cardView2"
+        style="@style/tittleTextStyle"/>
+
+    <TextView
+        android:id="@+id/popup_book_description_subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/popup_book_description_subtitle"
+        app:layout_constraintStart_toStartOf="@+id/popup_book_description_title"
+        app:layout_constraintTop_toBottomOf="@+id/popup_book_description_title"
+        style="@style/DefaultTextStyle"/>
+
+    <TextView
+        android:id="@+id/popup_book_genra_title"
+        style="@style/tittleTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/popup_book_genra_title"
+        android:layout_marginTop="@dimen/default_margin"
+        app:layout_constraintStart_toStartOf="@+id/popup_book_description_subtitle"
+        app:layout_constraintTop_toBottomOf="@+id/popup_book_description_subtitle"/>
+
+    <TextView
+        android:id="@+id/popup_book_genra_subtitle"
+        style="@style/DefaultTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/popup_book_genra_subtitle"
+        app:layout_constraintStart_toStartOf="@+id/popup_book_genra_title"
+        app:layout_constraintTop_toBottomOf="@+id/popup_book_genra_title" />
+
+    <TextView
+        android:id="@+id/popup_book_score_title"
+        style="@style/tittleTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/default_margin"
+        android:text="@string/popup_book_score_title"
+        app:layout_constraintStart_toStartOf="@+id/popup_book_genra_subtitle"
+        app:layout_constraintTop_toBottomOf="@+id/popup_book_genra_subtitle" />
+
+    <TextView
+        android:id="@+id/popup_book_score_subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/popup_book_score_subtitle"
+        style="@style/DefaultTextStyle"
+        app:layout_constraintStart_toStartOf="@+id/popup_book_score_title"
+        app:layout_constraintTop_toBottomOf="@+id/popup_book_score_title"/>
+
+    <TextView
+        android:id="@+id/lu"
+        style="@style/tittleTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="50dp"
+        android:text="Lu"
+        app:layout_constraintStart_toStartOf="@+id/popup_book_score_subtitle"
+        app:layout_constraintTop_toBottomOf="@+id/popup_book_score_subtitle" />
+
+    <ImageView
+        android:id="@+id/round_button"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="75dp"
+        android:layout_marginLeft="20dp"
+        android:src="@drawable/ic_unread"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/lu"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
